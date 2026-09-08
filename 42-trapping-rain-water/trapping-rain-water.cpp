@@ -27,8 +27,7 @@ public:
         int waterTrapped = 0;
 
         for (int i = 0; i < n; i++) {
-            int currWater =
-                min(leftMax[i], rightMax[i]) - height[i];
+            int currWater = min(leftMax[i], rightMax[i]) - height[i];
 
             if (currWater > 0) {
                 waterTrapped += currWater;
