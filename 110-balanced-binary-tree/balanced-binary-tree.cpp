@@ -25,8 +25,6 @@ public:
     }
 
     bool isBalanced(TreeNode* root) {
-        // if(root == NULL) return 1;
-        // if(abs(height(root->left) - height(root->right) <= 1)) return 1;
         int diff = 0;
         height(root, diff);
 
